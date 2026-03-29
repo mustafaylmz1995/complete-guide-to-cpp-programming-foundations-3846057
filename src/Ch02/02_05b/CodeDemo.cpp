@@ -111,3 +111,14 @@ int main(){
     };
 }
 */
+
+/*
+    typedef vs using
+
+    typedef ile bir type tanımlanabilir.
+    typedef unsigned int uint32_t; 
+
+    using ile de tanımlanabilir okunuşu kolaydır. using cpp11 den sonra tanımlanmıştır
+    using uint32_t = unsigned int;
+    
+*/
