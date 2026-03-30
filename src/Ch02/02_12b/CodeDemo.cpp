@@ -6,13 +6,13 @@
 #include <typeinfo>
 
 int main(){
-    auto score;
-    auto points;
-    auto height;
-    auto duration;
-    auto is_active;
-    auto initial;
-    auto title;
+    auto score = 8;
+    auto points = 123456789123456789;
+    auto height = 6.2f;
+    auto duration = 90.0;
+    auto is_active = true;
+    auto initial = 'P';
+    auto title = "Soccer Champions";
 
     std::cout << "The type of score is " << typeid(score).name() << std::endl;
     std::cout << "The type of points is " << typeid(points).name() << std::endl;
@@ -25,3 +25,21 @@ int main(){
     std::cout << std::endl << std::endl;
     return 0;
 }
+
+/*      
+    Type Inference
+    CPP11 den sonra type inference denilen bir özellik geldi. 
+    Değişkeni istediğimiz uygun tipe dönüştüren bir özellik.
+    typeid fonksiyonu typeinfo header'ında bulunur ve verilen 
+    değişkenin tipini döndürür.
+    auto keyword'u ile tanımlanan değişkenler başlatılmalıdır.
+
+    i --> int
+    l --> long
+    f --> float
+    d --> double
+    b --> bool
+    c --> char
+    PKc --> Pointer Const Char (String)
+
+*/
