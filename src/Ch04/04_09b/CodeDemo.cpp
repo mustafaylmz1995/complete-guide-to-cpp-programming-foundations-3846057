@@ -7,12 +7,25 @@
 
 int main(){
     const size_t LENGTH = 50;
-    char racer1[];
+    char racer1[] = "Speedy"; // All character of y is \0
     char racer2[LENGTH];
+
+    //strncpy(racer2, "Lightning", LENGTH-1);
+    strncpy(racer2, "Lightning", sizeof(racer2) -1 );
+    racer2[sizeof(racer2) - 1] = '\0';
+
     char raceResult[LENGTH * 2];
+
+    strncpy(raceResult, "And the winner is ", sizeof(raceResult) -1);
+    raceResult[sizeof(raceResult) - 1 ] = '\0';
 
     std::cout << "Racer 1: " << racer1 << std::endl;
     std::cout << "Racer 2: " << racer2 << std::endl;
+
+    strncat(raceResult, racer1, sizeof(raceResult) - strlen(raceResult) -1);
+
+
+    std::cout << raceResult << std::endl;
 
     std::cout << std::endl << std::endl;
     return 0;
