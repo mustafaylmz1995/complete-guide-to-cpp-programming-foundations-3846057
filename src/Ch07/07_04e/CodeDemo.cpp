@@ -74,3 +74,33 @@ int main(){
     std::cout << std::endl << std::endl;
     return 0;
 }
+
+
+/*
+Inventory sınıfı için constructor ve destructor örneği
+Constructor: Nesne oluşturulduğunda çağrılır
+- Sınıf adıyla aynı isimde olmalı, dönüş tipi yoktur
+- Burada capacity üyesini 10 olarak başlatıyoruz
+- items için dinamik bellek tahsis ediyoruz (heap üzerinde)
+- Bu constructor, parametre almayan "default constructor" olarak adlandırılır
+entory() : capacity(10) {
+ms = new std::vectorstd::string(); // items için dinamik bellek ayır
+Constructor overload: capacity değerini dışarıdan alır
+- Parametre olarak capacity_i alıyoruz
+- this->capacity ile üye değişkeni, capacity_i ile parametreyi ayırt ediyoruz
+entory(int capacity_i) : capacity(capacity_i) {
+ms = new std::vectorstd::string(); // items için dinamik bellek ayır
+Destructor: Nesne yok edilirken çağrılır
+- Sınıf adı önünde ~ işareti olur
+- Dinamik olarak ayrılan belleği serbest bırakmak için kullanılır
+- Bellek sızıntılarını önlemek için delete kullanılır
+ventory() {
+ete items; // Dinamik belleği temizle
+Notlar:
+- Constructorlar nesne oluşturulurken otomatik çağrılır
+- Member initializer list (:) ile üye değişkenler hızlı ve net şekilde başlatılır
+- this pointer, üye değişken ile parametreyi ayırt etmek için kullanılır
+- Destructor, dinamik kaynakları serbest bırakmak için önemlidir
+- Bu yapılar, C++'da nesne yönelimli programlamanın temel taşlarıdır
+Böylece, Inventory sınıfı nesneleri güvenli ve doğru şekilde oluşturulup yok edilir.
+*/

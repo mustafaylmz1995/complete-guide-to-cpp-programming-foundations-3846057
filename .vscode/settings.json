@@ -21,7 +21,7 @@
   "screencastMode.onlyKeyboardShortcuts": true,
   "terminal.integrated.fontSize": 18,
   "window.commandCenter":false,
-  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.colorTheme": "Dark+",
   "workbench.fontAliasing": "antialiased",
   "workbench.statusBar.visible": true,
   "C_Cpp.clang_format_fallbackStyle": "none",
@@ -91,5 +91,6 @@
     "xutility": "cpp",
     "stack": "cpp",
     "complex": "cpp"
-}
+},
+"github.copilot.nextEditSuggestions.enabled": false
 }

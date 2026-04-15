@@ -130,3 +130,46 @@ int main(){
     std::cout << std::endl << std::endl;
     return 0;
 }
+
+/*
+
+C++ Sınıfları ve Nesneleri Notları
+1. Sınıf (class) Nedir?
+- Sınıf, programda nesneler oluşturmak için bir şablondur.
+- Nesneler, sınıfın çalışma zamanında oluşturulan somut örnekleridir.
+Örnek: "Potion" sınıfı, iksirlerin yapısını ve davranışını tanımlar.
+
+2. Sınıf Üyeleri
+- Veri üyeleri: Nesnenin durumunu tutan değişkenler (örneğin, iksir gücü, süre).
+- Fonksiyon üyeleri (metotlar): Nesnenin davranışlarını tanımlayan fonksiyonlar (örneğin, iri kullanma, etkisini gösterme).
+
+3. Nesne Oluşturma ve Bellek Yönetimi
+- Nesneler stack (yığın) veya heap (yığın dışı) bellekte oluşturulabilir.
+- Stack'te oluşturulan nesneler otomatik yönetilir ve kapsam dışına çıkınca yok edilir.
+- Heap'te oluşturulan nesneler için new ve delete operatörleri kullanılır, yönetim manueldir.
+
+4. Erişim Belirleyiciler (Access Specifiers)
+- public: Her yerden erişilebilir.
+- private: Sadece sınıfın içinden erişilebilir.
+- protected: private gibidir, ancak türetilmiş sınıflardan da erişilebilir.
+
+5. Kapsülleme (Encapsulation)
+- Nesnenin durumu ve davranışı bir arada gruplanır.
+- Duruma erişim kontrollü yapılır, dışarıdan doğrudan değiştirilmez.
+
+6. Yapıcı (Constructor) ve Yıkıcı (Destructor)
+- Constructor: Nesne oluşturulurken otomatik çağrılır, nesneyi başlatır.
+- Constructor aşırı yüklenebilir (farklı parametrelerle birden fazla constructor olabilir).
+- Destructor: Nesne yok edilirken çağrılır, kaynakları temizler.
+- Heap'te oluşturulan nesnelerde kaynak yönetimi için önemlidir.
+
+7. Operatör Aşırı Yükleme
+- Fonksiyonlar gibi, operatörler de aşırı yüklenebilir.
+- Böylece +, -, == gibi operatörler nesneler için anlam kazanır.
+
+Özet:
+C++ sınıfları, nesnelerin durumunu ve davranışını tanımlayan şablonlardır. 
+Bellek yönetimi, erişim kontrolü ve yaşam döngüsü yönetimi (constructor/destructor) önemli kavramlardır. 
+Operatör aşırı yükleme ile sınıflar dilin doğal parçaları gibi kullanılabilir.
+
+*/
